@@ -4,7 +4,7 @@ The software to analyse the 5' UTR-directed DMS-MaPseq data in L. monocytogenes
 
 1) Load FATSTQ files from NCBI Sequence Reads Archive: SRP156446
 
-2) Align the reads to L. monocytogenes EGD-e genome (NC_003210.1) with 
+2) Align the reads to L. monocytogenes EGD-e genome ('NC_003210.1.fa') with 
    Bowtie2 aligner, using --end-to-end --very-sensitive mode.
 
 3) Name the resulting files: 'FUSE_K.sam', 'FUSE_invitro.sam',
