@@ -566,10 +566,10 @@ class Experiment:
             for key in sorted(self.exp_dict.keys()):
                 FN.write('\t'.join(self.exp_dict[key]) + '\n')
 
-Exp = Experiment(['lib_K', 'lib_invitro', 'lib_total',
-		  'lib_37A', 'lib_37B',
-		  'lib_26', 'lib_26shift', 'lib_37shift',  
-		    'lib_hfq',  'lib_lhrA',  'lib_prfA'])
+Exp = Experiment(['FUSE_K', 'FUSE_invitro', 'FUSE_total',
+		  'FUSE_37A', 'FUSE_37B',
+		  'FUSE_26', 'FUSE_37shift',  
+		    'FUSE_hfq',  'FUSE_lhrA',  'FUSE_prfA'])
 
 Exp.calcStat()
 Exp.exportData()
