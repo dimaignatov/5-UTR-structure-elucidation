@@ -1,4 +1,3 @@
-setwd('E:/NGS/___Materials for publication___/Statistical analysis')
 D <- read.table('Experiment.txt', sep='\t', header=TRUE)
 
 # Exclude the positions with coverage less than 0 in any of the samples and >1% mismatches in control
@@ -126,16 +125,6 @@ D.37B <- cbind(D[,1:7],
                dms_37A=D$dms_37A, dms_37B=D$dms_37B, 
                pval_37B, fdr_37B, odds_37B, diff_37B)
 write.table(D.37B, file='Diff_37B.txt', quote=F, sep = "\t", row.names = FALSE)
-
-fdr_invitro <- p.adjust(pval_invitro, method = 'fdr')
-diff_invitro <- ifelse(fdr_invitro < 0.05 & 
-                     (odds_invitro < 0.75 | odds_invitro > 1.25) &
-                     abs(D$dms_invitro-D$dms_37) > 0.2, FALSE, FALSE)
-D.invitro <- cbind(D[,1:7], 
-               cvg_37=D$cvg_37, mis_37=D$mis_37, cvg_invitro=D$cvg_invitro, mis_invitro=D$mis_invitro,
-               dms_37=D$dms_37, dms_invitro=D$dms_invitro, 
-               pval_invitro, fdr_invitro, odds_invitro, diff_invitro)
-write.table(D.invitro, file='Diff_invitro.txt', quote=F, sep = "\t", row.names = FALSE)
 
 fdr_26 <- p.adjust(pval_26, method = 'fdr')
 diff_26 <- ifelse(fdr_26 < 0.05 & 
