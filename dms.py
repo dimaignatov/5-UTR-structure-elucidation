@@ -571,4 +571,5 @@ Exp = Experiment(['lib_K', 'lib_invitro', 'lib_total',
 		  'lib_26', 'lib_26shift', 'lib_37shift',  
 		    'lib_hfq',  'lib_lhrA',  'lib_prfA'])
 
-Exp_60 = Experiment(['lib_K', 'lib_invitro', 'lib_37A', 'lib_37B'], extend_utr=60)
+Exp.calcStat()
+Exp.exportData()
