@@ -1,6 +1,6 @@
 # 5-UTR-structure-elucidation
 
-The software to analyse the 5' UTR-directed DMS-MaPseq data in L. monocytogenes
+The software to analyse the FUSE (5' UTR Structure Eluscidation) data in L. monocytogenes
 
 1) Load FATSTQ files from NCBI Sequence Reads Archive: SRP156446
 
