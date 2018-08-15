@@ -2,7 +2,7 @@
 
 The software to analyse the FUSE (5' UTR Structure Elucidation) data in L. monocytogenes
 
-1) Load FATSTQ files from NCBI Sequence Reads Archive: SRP156446
+1) Load FATSTQ files from NCBI's Gene Expression Omnibus through GEO Series accession number GSE118387.
 
 2) Align the reads to L. monocytogenes EGD-e genome ('NC_003210.1.fa') with Bowtie2 aligner, using --end-to-end --very-sensitive mode.
 
